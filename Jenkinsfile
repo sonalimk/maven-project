@@ -6,7 +6,7 @@ tools {
 stages{
         stage('Build'){
             steps {
-                sh 'mvn clean maven-project'
+                sh 'mvn clean package'
             }
             post {
                 success {
